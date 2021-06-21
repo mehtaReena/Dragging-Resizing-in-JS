@@ -16,7 +16,9 @@ function mouseMove(e) {
         let maxX = container.offsetLeft + container.clientWidth - box.clientWidth;
         let maxY = container.offsetTop + container.clientHeight - box.clientHeight;
 
+        leftWidth = container.getBoundingClientRect();
 
+        console.log(leftWidth   , dy , dx )
         dx = dx < container.offsetLeft ? container.offsetLeft : dx > maxX ? maxX : dx
         dy = dy < container.offsetTop ? container.offsetTop : dy > maxY ? maxY : dy
         box.style.top = dy + 'px'

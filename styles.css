@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 191, 215);
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: rgb(191, 194, 240);
+    width: 60vw;
+    height: 60vh;
+}
+
+.box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(120, 96, 177);
+    color: white;
+    font-size: .9rem;
+    cursor: move;
+}
+
+
+
+
+/* RESIZE CSS */
+.slider-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: sans-serif;
+}
+
+.right {
+    flex: 1;
+    background-color: #F7D085;
+    justify-content: center;
+}
+
+.left {
+    background-color: #B5BDE9;
+    max-width: 85vw;
+    min-width: 15vw;
+    justify-content: center;
+}
+.resizer{
+    cursor: col-resize;
+    background-color: #aaa;
+    width: 10px;
+    height: 100%;
+
+    /* Prevent the browser's built-in drag from interfering */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
